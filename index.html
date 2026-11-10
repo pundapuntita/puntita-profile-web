@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puntita Sae-Jia | Profile</title>
-    <meta name="description" content="Academic and professional profile of Puntita Sae-Jia, Ph.D. in Mathematics.">
+    <meta name="description" content="Academic and professional profile of Puntita Sae-Jia, Lecturer in Mathematics Education, School of Science, Walailak University.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -32,9 +32,9 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#conferences">Conferences</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -44,20 +44,23 @@
     <!-- Hero Section -->
     <header class="hero" id="about">
         <div class="hero-container reveal">
+            <div class="hero-profile">
+                <img src="profile.JPG" alt="Puntita Sae-Jia" class="hero-profile-img">
+            </div>
             <h1 class="hero-title">Puntita Sae-Jia</h1>
-            <h2 class="hero-subtitle">Ph.D. in Mathematics</h2>
-            <p class="hero-desc">Specializing in Machine Learning, Optimization Methods, and Health Data Analytics.</p>
+            <h2 class="hero-subtitle">Lecturer in Mathematics Education</h2>
+            <p class="hero-desc">School of Science, Walailak University<br>Specializing in Machine Learning, Optimization Methods, and Health Data Analytics.</p>
             <div class="hero-metrics">
                 <div class="metric">
-                    <span class="metric-value">5</span>
+                    <span class="metric-value">6</span>
                     <span class="metric-label">Publications</span>
                 </div>
                 <div class="metric">
-                    <span class="metric-value">2</span>
+                    <span class="metric-value">3</span>
                     <span class="metric-label">H-index</span>
                 </div>
                 <div class="metric">
-                    <span class="metric-value">9</span>
+                    <span class="metric-value">15</span>
                     <span class="metric-label">Citations</span>
                 </div>
             </div>
@@ -77,7 +80,6 @@
                     <div class="timeline-content card card-3d">
                         <h3>Ph.D. in Mathematics (International Program)</h3>
                         <h4>Chiang Mai University, Thailand</h4>
-                        <p>Dissertation defense completed; awaiting final approval from the University Council.</p>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
@@ -138,6 +140,19 @@
             </div>
             
             <div class="publications-list">
+                <div class="pub-card card card-3d reveal clickable-paper" onclick="openPaperModal()" title="Click to view Executive Research Summary">
+                    <div class="pub-badge q1">Q1</div>
+                    <h4>Double Inertial Viscosity Forward-Backward Algorithm for Split Variational Inclusion with Applications to Deblurring of Medical Images and Data Classification</h4>
+                    <p class="pub-authors">Sae-jia, P., Panyahan, E., Suantai, S., and Yao, J.-C. (2026)</p>
+                    <p class="pub-journal">Journal of Computational and Applied Mathematics, 488, 117823.</p>
+                    <div style="display: flex; gap: 0.8rem; align-items: center; margin-top: 1rem; flex-wrap: wrap;">
+                        <button type="button" class="paper-summary-btn" onclick="event.stopPropagation(); openPaperModal()">
+                            <ion-icon name="sparkles"></ion-icon> Executive Research Brief
+                        </button>
+                        <a href="https://doi.org/10.1016/j.cam.2026.117823" target="_blank" class="pub-link" onclick="event.stopPropagation()">DOI: 10.1016/j.cam.2026.117823 <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                    </div>
+                </div>
+
                 <div class="pub-card card card-3d reveal">
                     <div class="pub-badge q1">Q1</div>
                     <h4>A Double Inertial Fixed Point Algorithm with Linesearch and Its Application to Machine Learning for Data Classification</h4>
@@ -175,13 +190,75 @@
                     <h4>A Novel Algorithm for Convex Bi-level Optimization Problems in Hilbert Spaces with Applications</h4>
                     <p class="pub-authors">Sae-jia, P., and Suantai, S. (2023)</p>
                     <p class="pub-journal">Thai Journal of Mathematics, 21(3), 625–645.</p>
+                    <a href="https://thaijmath.com/index.php/thaijmath/article/view/2" target="_blank" class="pub-link">Read Article <ion-icon name="arrow-forward-outline"></ion-icon></a>
                 </div>
 
                 <div class="pub-card card card-3d reveal">
-                    <div class="pub-badge pending">Under review</div>
-                    <h4>Double Inertial Viscosity Forward-Backward Algorithm for Split Variational Inclusion with Applications to Deblurring of Medical Images and Data Classification</h4>
+                    <div class="pub-badge pending">Under revision</div>
+                    <h4>Double Inertial Proximal Algorithm for Optimization with Applications to Medical Image Restoration and Health Data Classification</h4>
                     <p class="pub-authors">Sae-jia, P., Panyahan, E., Suantai, S., and Yao, J.-C.</p>
-                    <p class="pub-journal">Under review at Journal of Computational and Applied Mathematics.</p>
+                    <p class="pub-journal">Under revision at AIMS Mathematics</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Projects & Innovation</h2>
+                <p class="section-subtitle">Research Application & Live Demonstration</p>
+            </div>
+            
+            <div class="card reveal" style="padding: 2.5rem 2rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div class="icon-container" style="font-size: 2.2rem; margin-bottom: 0;">
+                            <ion-icon name="pulse-outline" style="color: #e63946;"></ion-icon>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700;">Hypertension Predictor</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">Web Application for Hypertension Risk Prediction (Copyright Pending)</p>
+                        </div>
+                    </div>
+                    <a href="https://hypertension-webapp-indol.vercel.app" target="_blank" rel="noopener noreferrer" class="contact-pill" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.4rem; font-size: 0.95rem; text-decoration: none; border-radius: 999px;">
+                        <span>Open Full Web App</span>
+                        <ion-icon name="open-outline"></ion-icon>
+                    </a>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; font-size: 1rem;">
+                    An innovative web application for hypertension risk prediction developed using machine learning algorithms to support health assessment and screening. Test and interact with the live model directly below:
+                </p>
+
+                <!-- Live Action Browser Window -->
+                <div class="browser-window">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span class="browser-dot red"></span>
+                            <span class="browser-dot yellow"></span>
+                            <span class="browser-dot green"></span>
+                        </div>
+                        <div class="browser-address-bar">
+                            <ion-icon name="lock-closed" style="color: #27c93f; font-size: 0.9rem;"></ion-icon>
+                            <span>https://hypertension-webapp-indol.vercel.app</span>
+                        </div>
+                        <div class="browser-actions">
+                            <a href="https://hypertension-webapp-indol.vercel.app" target="_blank" rel="noopener noreferrer" class="browser-action-btn" title="Open in new window">
+                                <span>Open New Tab</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="browser-viewport">
+                        <div class="iframe-placeholder" id="iframePlaceholder">
+                            <ion-icon name="pulse-outline"></ion-icon>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.6rem; font-weight: 500;">Loading Interactive Application...</p>
+                        </div>
+                        <iframe data-src="https://hypertension-webapp-indol.vercel.app" 
+                                id="appIframe" 
+                                title="Hypertension Predictor Live Application" 
+                                allowfullscreen 
+                                onload="document.getElementById('iframePlaceholder')?.style.setProperty('display', 'none')">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -225,7 +302,15 @@
 <div class="timeline">
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
-                    <span class="year">2023–Present</span>
+                    <span class="year">2023–2026</span>
+                    <div class="timeline-content card card-3d">
+                        <h3>Assistant Managing Editor</h3>
+                        <h4>Thai Journal of Mathematics (Thai.J.Math.)</h4>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <span class="year">2023–2026</span>
                     <div class="timeline-content card card-3d">
                         <h3>Research Assistant (Ph.D. level)</h3>
                         <h4>Excellence Center in Optimization and Computational Intelligence for Big Data Prediction</h4>
@@ -233,7 +318,7 @@
                 </div>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
-                    <span class="year">2023–Present</span>
+                    <span class="year">2023–2026</span>
                     <div class="timeline-content card card-3d">
                         <h3>Research Assistant (Ph.D. level)</h3>
                         <h4>Mathematical Modeling and Intelligence Algorithms Development Using Machine Learning for Non‑Communicable Disease Prevention and Screening (FF66–FF68)</h4>
@@ -256,7 +341,8 @@
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <span class="year">8 Nov 2025 – 6 Jan 2026</span>
-                    <div class="timeline-content card card-3d">
+                    <div class="timeline-content card card-3d clickable-card" onclick="openModal('taiwan')">
+                        <ion-icon name="arrow-forward-circle-outline" class="card-icon-more"></ion-icon>
                         <h3>Visiting Researcher</h3>
                         <h4>National Sun Yat-sen University, Taiwan</h4>
                         <p class="ref-uni">Under Professor Jen-Chih Yao</p>
@@ -265,7 +351,8 @@
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <span class="year">23–30 Sep 2024</span>
-                    <div class="timeline-content card card-3d">
+                    <div class="timeline-content card card-3d clickable-card" onclick="openModal('japan')">
+                        <ion-icon name="arrow-forward-circle-outline" class="card-icon-more"></ion-icon>
                         <h3>Visiting Researcher</h3>
                         <h4>Niigata University, Japan</h4>
                         <p class="ref-uni">Under Professor Tamaki Tanaka</p>
@@ -278,7 +365,16 @@
 <div class="timeline">
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
-                    <span class="year">2021 – Present</span>
+                    <span class="year">Present</span>
+                    <div class="timeline-content card card-3d">
+                        <h3>Lecturer</h3>
+                        <h4>School of Science, Walailak University</h4>
+                        <p class="ref-uni">Mathematics Education Program</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <span class="year">2021 – 2026</span>
                     <div class="timeline-content card card-3d">
                         <h3>Gifted Mathematics Camp Instructor</h3>
                     </div>
@@ -340,7 +436,8 @@
                     <p class="pub-journal" style="margin-top: 0.5rem;">For MSP Interfood Co., Ltd.<br><em>(Organized by Professor Suthep Suantai)</em></p>
                 </div>
 
-                <div class="pub-card card card-3d reveal">
+                <div class="pub-card card card-3d reveal clickable-card" onclick="openModal('uttaradit')">
+                    <ion-icon name="arrow-forward-circle-outline" class="card-icon-more"></ion-icon>
                     <h4>Invited Speaker</h4>
                     <p class="pub-authors" style="margin-top: 0.5rem;">Workshop on “Using AI as an Assistant for Developing Textbooks and Teaching Materials” for Faculty Members, Faculty of Science and Technology, Uttaradit Rajabhat University.</p>
                     <p class="pub-journal" style="margin-top: 0.5rem;"><em>(Organized by the Faculty of Science and Technology, Uttaradit Rajabhat University)</em></p>
@@ -359,25 +456,6 @@
             </div>
 
         </section>
-
-        <section id="projects" class="section-container">
-            <div class="section-header reveal">
-                <h2 class="section-title">Projects</h2>
-                <p class="section-subtitle">Research Projects and Innovation</p>
-            </div>
-            
-<div class="pub-card card card-3d reveal" style="margin-bottom: 4rem;">
-                <div class="icon-container" style="margin-bottom: 0.5rem; font-size: 2rem;"><ion-icon name="laptop-outline"></ion-icon></div>
-                <h4>
-                    <a href="https://hypertension-webapp-indol.vercel.app" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-primary)'">
-                        Hypertension Predictor <ion-icon name="open-outline" style="font-size: 0.8em; margin-left: 4px; transform: translateY(2px);"></ion-icon>
-                    </a>
-                </h4>
-                <p class="pub-journal">Web application for hypertension risk prediction (Copyright Pending)</p>
-            </div>
-        </section>
-
-        
 
         <section id="skills" class="section-container">
             <div class="section-header reveal">
@@ -417,7 +495,7 @@
             </div>
             
             <div style="display: flex; gap: 1rem; justify-content: center; align-items: center; margin-top: 2rem;">
-                <a href="mailto:puntita.jia@gmail.com" class="contact-pill" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 999px;">
+                <a href="mailto:puntita.sa@wu.ac.th" class="contact-pill" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 999px;">
                     <ion-icon name="mail-outline" style="font-size: 1.4rem;"></ion-icon> Email
                 </a>
                 <a href="https://scholar.google.com/citations?hl=en&user=EI0zRUAAAAAJ" target="_blank" rel="noopener noreferrer" class="contact-pill" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; padding: 0.8rem 1.5rem; background: var(--card-bg); color: var(--text-primary); text-decoration: none; border-radius: 999px;">
@@ -430,6 +508,173 @@
     <footer>
         <p>&copy; 2026 Puntita Sae-Jia. All rights reserved.</p>
     </footer>
+
+    <!-- Image Gallery Modal -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()"><ion-icon name="close-outline"></ion-icon></span>
+            <h2 id="modalTitle" class="section-title" style="margin-bottom: 0.5rem;">Event</h2>
+            <p id="modalDesc" class="section-subtitle" style="margin-bottom: 2rem;">Description</p>
+            <div id="modalGallery" class="modal-gallery">
+                <!-- Images will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Paper Executive Brief Modal -->
+    <div id="paperModal" class="modal">
+        <div class="paper-modal-content">
+            <span class="close-modal" onclick="closePaperModal()"><ion-icon name="close-outline"></ion-icon></span>
+            
+            <div class="paper-modal-header">
+                <div class="paper-badges-wrap">
+                    <span class="paper-pill-tag q1-tag">Q1 Tier Journal</span>
+                    <span class="paper-pill-tag" style="background: #ecfdf5; color: #047857; font-weight: 700; border: 1px solid #a7f3d0;">Strong Convergence Proven</span>
+                    <span class="paper-pill-tag journal-tag">J. Comput. Appl. Math. (2026)</span>
+                </div>
+                <h2 class="paper-modal-title">
+                    Double Inertial Viscosity Forward-Backward Algorithm for Split Variational Inclusion with Applications to Deblurring of Medical Images and Data Classification
+                </h2>
+                <p class="paper-modal-meta">
+                    <strong>Authors:</strong> Puntita Sae-jia, Eakkpop Panyahan, Suthep Suantai, and Jen-Chih Yao<br>
+                    <strong>Journal:</strong> <em>Journal of Computational and Applied Mathematics</em>, 488, 117823 (2026) &bull; 
+                    <a href="https://doi.org/10.1016/j.cam.2026.117823" target="_blank" style="color: var(--accent-color); font-weight: 500; text-decoration: none;">DOI: 10.1016/j.cam.2026.117823</a>
+                </p>
+            </div>
+
+            <!-- 1. Mathematical Problems (Bilevel & Split) -->
+            <div style="margin-bottom: 1.5rem;">
+                <div class="clean-eq-card" style="border-left-color: #8b5cf6;">
+                    <div class="clean-eq-title">
+                        <ion-icon name="layers-outline" style="color: #8b5cf6; font-size: 1.2rem;"></ion-icon>
+                        <span>Convex Bilevel Optimization Model</span>
+                    </div>
+                    <div class="clean-eq-math" style="background: #faf5ff; color: #6b21a8; margin-bottom: 0.5rem;">
+                        Outer-level: &nbsp; min<sub>x ∈ Γ</sub> φ(x)
+                    </div>
+                    <div class="clean-eq-math" style="background: #faf5ff; color: #6b21a8;">
+                        Inner-level (Constraint Γ): &nbsp; argmin<sub>x ∈ H</sub> { f(x) + g(x) }
+                    </div>
+                    <p style="font-size: 0.83rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">
+                        where φ: H → ℝ is a strongly convex and differentiable function with parameter σ &gt; 0 on real Hilbert space H.
+                    </p>
+                </div>
+
+                <div class="clean-eq-card">
+                    <div class="clean-eq-title">
+                        <ion-icon name="git-branch-outline" style="color: #0284c7; font-size: 1.2rem;"></ion-icon>
+                        <span>Split Variational Inclusion Problem (SVIP)</span>
+                    </div>
+                    <div class="clean-eq-math">
+                        Find x* ∈ H₁ such that: &nbsp; 0 ∈ (A₁ + B₁)(x*) &nbsp; and &nbsp; 0 ∈ (A₂ + B₂)(Lx*)
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Full Algorithm 8 Display -->
+            <div class="algo-container">
+                <div class="algo-header">
+                    <span>Algorithm 8: Double Inertial Viscosity Forward-Backward Algorithm</span>
+                    <span style="font-size: 0.85rem; font-weight: 700; color: #047857; background: #ecfdf5; padding: 0.2rem 0.65rem; border-radius: 6px; border: 1px solid #a7f3d0;">Strong Convergence Proven</span>
+                </div>
+                <div class="algo-body">
+                    <div class="algo-step">
+                        <strong>Initialization:</strong> Choose x<sub>1</sub>, x<sub>0</sub>, x<sub>-1</sub> ∈ H, λ<sub>n</sub> ∈ (0, 1 / ‖L‖²), {r<sub>n</sub>} ⊂ (0, β], and {β<sub>n</sub>} ⊂ (0, 1). Take {ξ<sub>n</sub>}, {μ<sub>n</sub>} ⊂ (0, ∞) and {ρ<sub>n</sub>} ⊂ (-∞, 0).
+                    </div>
+                    <div class="algo-step" style="margin-top: 0.6rem;">
+                        <strong>Iterative Steps:</strong> For n ≥ 1, calculate x<sub>n+1</sub> as follows:
+                    </div>
+                    <div class="algo-step" style="padding-left: 1.2rem;">
+                        <strong>Step 1 (Compute Inertial Steps):</strong>
+                        <div class="algo-formula">
+                            θ<sub>n</sub> = min { μ<sub>n</sub>, &nbsp; ξ<sub>n</sub> / ‖x<sub>n</sub> - x<sub>n-1</sub>‖ } &nbsp; if x<sub>n</sub> ≠ x<sub>n-1</sub>; &nbsp; otherwise &nbsp; μ<sub>n</sub>
+                        </div>
+                        <div class="algo-formula" style="margin-top: 0.3rem;">
+                            δ<sub>n</sub> = max { ρ<sub>n</sub>, &nbsp; -ξ<sub>n</sub> / ‖x<sub>n-1</sub> - x<sub>n-2</sub>‖ } &nbsp; if x<sub>n-1</sub> ≠ x<sub>n-2</sub>; &nbsp; otherwise &nbsp; ρ<sub>n</sub>
+                        </div>
+                    </div>
+                    <div class="algo-step" style="padding-left: 1.2rem; margin-top: 0.8rem;">
+                        <strong>Step 2 (Compute Double Inertial & Forward-Backward Updates):</strong>
+                        <div class="algo-formula">
+                            w<sub>n</sub> = x<sub>n</sub> + θ<sub>n</sub>(x<sub>n</sub> - x<sub>n-1</sub>) + δ<sub>n</sub>(x<sub>n-1</sub> - x<sub>n-2</sub>)
+                        </div>
+                        <div class="algo-formula" style="margin-top: 0.3rem;">
+                            y<sub>n</sub> = J<sub>r<sub>n</sub></sub><sup>A₁, B₁</sup> ( w<sub>n</sub> - λ<sub>n</sub> L* (I - J<sub>r<sub>n</sub></sub><sup>A₂, B₂</sup>) L w<sub>n</sub> )
+                        </div>
+                        <div class="algo-formula" style="margin-top: 0.3rem;">
+                            z<sub>n</sub> = J<sub>r<sub>n</sub></sub><sup>A₁, B₁</sup> ( y<sub>n</sub> - λ<sub>n</sub> L* (I - J<sub>r<sub>n</sub></sub><sup>A₂, B₂</sup>) L y<sub>n</sub> )
+                        </div>
+                        <div class="algo-formula" style="margin-top: 0.3rem;">
+                            x<sub>n+1</sub> = β<sub>n</sub> F(x<sub>n</sub>) + (1 - β<sub>n</sub>) z<sub>n</sub>
+                        </div>
+                    </div>
+                    <div class="algo-footer" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div><strong>Update:</strong> Set n := n + 1 and return to Step 1.</div>
+                        <div style="color: #065f46; background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 8px; padding: 0.6rem 0.9rem; margin-top: 0.4rem; font-size: 0.88rem; line-height: 1.5;">
+                            <strong style="color: #047857;">Theoretical Convergence Theorem:</strong> The sequence {x<sub>n</sub>} generated by Algorithm 8 is mathematically proven to converge <strong>strongly</strong> to a solution of the convex bilevel and split variational inclusion problem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Real-World Applications & Empirical Findings -->
+            <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="paper-grid-2col">
+                    <!-- Card 1: Hypertension Dataset (Matching User's Screenshot) -->
+                    <div class="eval-card-green">
+                        <div class="eval-card-header">
+                            <div class="eval-card-title">
+                                <ion-icon name="medkit-outline"></ion-icon>
+                                <span>Hypertension Dataset</span>
+                            </div>
+                            <span class="eval-card-badge">Sriphat Hospital (6,108 cases)</span>
+                        </div>
+                        <div class="eval-stat-box" style="margin-bottom: 1rem;">
+                            <div class="eval-stat-label">Test Accuracy (Table 11)</div>
+                            <div class="eval-stat-value">88.03%</div>
+                        </div>
+                        <p class="eval-card-desc">
+                            Achieved 88.03% test accuracy (Table 11). Evaluated across multiple comprehensive metrics (Precision, Recall, and F1-Score) demonstrating consistent superiority and higher diagnostic stability over benchmark baselines.
+                        </p>
+                    </div>
+
+                    <!-- Card 2: Medical Image Deblurring -->
+                    <div class="eval-card-green" style="background: #f8fafc; border-color: #cbd5e1;">
+                        <div class="eval-card-header">
+                            <div class="eval-card-title" style="color: #0f172a;">
+                                <ion-icon name="scan-outline" style="color: #0284c7;"></ion-icon>
+                                <span>Medical Image Deblurring</span>
+                            </div>
+                            <span class="eval-card-badge" style="background: #e0f2fe; color: #0369a1;">CT & MRI Scans</span>
+                        </div>
+                        <div class="eval-stats-grid">
+                            <div class="eval-stat-box" style="border-color: #cbd5e1;">
+                                <div class="eval-stat-label">PSNR (Table 8)</div>
+                                <div class="eval-stat-value blue">26.1291</div>
+                            </div>
+                            <div class="eval-stat-box" style="border-color: #cbd5e1;">
+                                <div class="eval-stat-label">SSIM (Table 8)</div>
+                                <div class="eval-stat-value teal">0.8806</div>
+                            </div>
+                        </div>
+                        <p class="eval-card-desc">
+                            Applied to medical image restoration achieving a PSNR of 26.1291 dB and SSIM of 0.8806 (Table 8), recovering fine anatomical structures and sharp diagnostic contours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1.5rem;">
+                <button type="button" class="contact-pill" onclick="closePaperModal()" style="border: 1px solid #d1d5db; background: #f3f4f6; color: #374151; padding: 0.6rem 1.4rem; cursor: pointer; border-radius: 999px;">
+                    Close
+                </button>
+                <a href="https://doi.org/10.1016/j.cam.2026.117823" target="_blank" rel="noopener noreferrer" class="contact-pill" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.6rem 1.4rem; text-decoration: none; border-radius: 999px;">
+                    <span>View Article in JCAM</span>
+                    <ion-icon name="open-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
